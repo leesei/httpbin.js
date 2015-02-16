@@ -1,11 +1,10 @@
 {
   "name": "httpbin.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "HTTPbin-alike implemented in Node.js",
   "main": "httpbin.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node httpbin.js | bunyan"
+  "bin": {
+    "httpbin.js": "./httpbin.js"
   },
   "author": "leesei@gmail.com",
   "license": "ISC",

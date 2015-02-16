@@ -6,7 +6,7 @@ Insipred by [HTTPbin](http://httpbin.org/), but supports arbitrary endpoint.
 ## Installation
 
 ```sh
-npm install
+npm install -g httpbin.js
 npm install -g bunyan # this is optional but recommanded
 ```
 
@@ -15,21 +15,19 @@ npm install -g bunyan # this is optional but recommanded
 ### print to console
 
 ```sh
-./httpbin.js
+httpbin.js
 ```
 
 If you have `bunyan` installed:
 
 ```sh
-npm run server
-# which is equilvalent to 
-./httpbin.js | bunyan
+httpbin.js | bunyan
 ```
 
 ### log to file
 
 ```sh
-./httpbin.js > log.json
+httpbin.js > log.json
 ```
 
 You may then analyse `log.json` programmatically or view it with `bunyan`
