@@ -1,6 +1,10 @@
 # httpbin.js
 
-A simple HTTP server that logs request attributes to [`bunyan`](https://github.com/trentm/node-bunyan) and (optionally) response body.
+[![npm](https://img.shields.io/npm/v/httpbin.js.svg)](https://www.npmjs.com/httpbin.js)
+[![npm](https://img.shields.io/npm/l/httpbin.js.svg)]()
+[![David](https://img.shields.io/david/leesei/httpbin.js.svg)]()
+
+A simple HTTP server that logs request attributes to [`bunyan`](https://github.com/trentm/node-bunyan) and (optionally) response body.  
 Insipred by [HTTPbin](http://httpbin.org/), but supports arbitrary endpoint.
 
 ## Installation
