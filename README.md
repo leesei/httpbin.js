@@ -31,11 +31,13 @@ httpbin.js | bunyan
 ### log to file
 
 ```sh
-httpbin.js > log.json
+httpbin.js | bunyan | tee log.json
 ```
 
-You may then analyse `log.json` programmatically or view it with `bunyan`
+### listen on other port
+
+`httpbin.js` listens on 35000 by default, you can change it by:
 
 ```sh
-echo log.json | bunyan
+httpbin.js -p 12345
 ```
