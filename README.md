@@ -5,13 +5,13 @@
 [![dependency status](https://img.shields.io/david/leesei/httpbin.js.svg?style=flat-square)](https://david-dm.org/leesei/httpbin.js)
 
 A simple HTTP server that logs request attributes to [`bunyan`](https://github.com/trentm/node-bunyan) and (optionally) response body.  
-Insipred by [HTTPbin](http://httpbin.org/), but supports arbitrary endpoint.
+Inspired by [HTTPbin](http://httpbin.org/), but supports arbitrary endpoint.
 
 ## Installation
 
 ```sh
 npm install -g httpbin.js
-npm install -g bunyan # this is optional but recommanded
+npm install -g bunyan # this is optional but recommended
 ```
 
 ## Usage
