@@ -41,3 +41,9 @@ httpbin.js | bunyan | tee log.json
 ```sh
 httpbin.js -p 12345
 ```
+
+## Similar projects
+
+[postmanlabs/httpbin: HTTP Request & Response Service, written in Python + Flask.](https://github.com/postmanlabs/httpbin)
+[mccutchen/go-httpbin: A reasonably complete and well-tested golang port of httpbin, with zero dependencies outside the go stdlib.](https://github.com/mccutchen/go-httpbin)
+[duskmoon314/httpbin-rs: HTTP Request & Response Service pretty like [httpbin](http://httpbin.org) but powered by Rust](https://github.com/duskmoon314/httpbin-rs)
