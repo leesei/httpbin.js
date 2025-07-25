@@ -6,7 +6,7 @@
       "dependencies": {
         "@hapi/hapi": "^21.4.0",
         "bunyan": "^1.8.15",
-        "commander": "^11.0.0",
+        "commander": "^11.1.0",
       },
     },
   },
