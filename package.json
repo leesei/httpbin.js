@@ -23,7 +23,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.2",
+    "@hapi/hapi": "^21.4.0",
     "bunyan": "^1.8.15",
     "nomnom": "^1.8.1"
   }

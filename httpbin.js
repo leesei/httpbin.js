@@ -10,13 +10,13 @@ const argv = require("nomnom")
   .option("port", {
     abbr: "p",
     help: "specify port of the server",
-    default: 35000
+    default: 35000,
   })
   .option("body", {
     abbr: "b",
     help: "put request attributes as response body",
     flag: true,
-    default: true
+    default: true,
   })
   .parse();
 // console.log(argv);
@@ -26,8 +26,8 @@ const log = Bunyan.createLogger({ name: APP_NAME });
 const server = new Hapi.server({
   port: argv.port,
   routes: {
-    cors: true
-  }
+    cors: true,
+  },
 });
 
 server.route({
@@ -42,7 +42,7 @@ server.route({
       url: "http://" + request.headers.host + request.raw.req.url,
       path: request.path,
       query: request.query,
-      body: request.payload
+      body: request.payload,
     };
     log.info(attrs);
     // log.info(request.raw.req);
@@ -51,7 +51,7 @@ server.route({
     } else {
       return;
     }
-  }
+  },
 });
 
 async function start() {
