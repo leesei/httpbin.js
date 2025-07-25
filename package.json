@@ -2,6 +2,11 @@
   "name": "httpbin.js",
   "version": "2.2.1",
   "description": "HTTPbin-like server implemented in Node.js",
+  "keywords": [
+    "httpbin",
+    "http",
+    "server"
+  ],
   "main": "httpbin.js",
   "preferGlobal": true,
   "engines": {
