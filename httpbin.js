@@ -2,23 +2,18 @@
 
 const Bunyan = require("bunyan");
 const Hapi = require("@hapi/hapi");
+const { Command } = require("commander");
 
 const APP_NAME = "httpbin.js";
 
-const argv = require("nomnom")
-  .script(APP_NAME)
-  .option("port", {
-    abbr: "p",
-    help: "specify port of the server",
-    default: 35000,
-  })
-  .option("body", {
-    abbr: "b",
-    help: "put request attributes as response body",
-    flag: true,
-    default: true,
-  })
-  .parse();
+const program = new Command();
+program
+  .name(APP_NAME)
+  .option("-p, --port <number>", "specify port of the server", 35000)
+  .option("-b, --body", "put request attributes as response body", true)
+  .option("--no-body", "do not respond with request attributes", false);
+program.parse(process.argv);
+const argv = program.opts();
 // console.log(argv);
 
 const log = Bunyan.createLogger({ name: APP_NAME });
@@ -49,7 +44,7 @@ server.route({
     if (argv.body) {
       return attrs;
     } else {
-      return;
+      return "";
     }
   },
 });

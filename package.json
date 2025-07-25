@@ -1,6 +1,6 @@
 {
   "name": "httpbin.js",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "HTTPbin-like server implemented in Node.js",
   "main": "httpbin.js",
   "preferGlobal": true,
@@ -25,6 +25,6 @@
   "dependencies": {
     "@hapi/hapi": "^21.4.0",
     "bunyan": "^1.8.15",
-    "nomnom": "^1.8.1"
+    "commander": "^11.0.0"
   }
 }

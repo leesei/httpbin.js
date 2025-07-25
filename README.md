@@ -18,6 +18,9 @@ npm install -g bunyan # this is optional but recommended
 
 ```sh
 httpbin.js
+
+# do not echo  request attributes back in response
+httpbin.js --no-body
 ```
 
 If you have `bunyan` installed:
